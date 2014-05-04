@@ -23,11 +23,11 @@ xkb_symbols "basic" {
 
     // tones
     key <TLDE> { [ quoteleft,  asciitilde, dead_tilde,   dead_tilde ] };  // nga, nga ~ ~
-    key <AB08> { [ comma,      less,       dead_tilde               ] };  // nga      ~
+    key <AB08> { [ comma,      less,       dead_grave               ] };  // huyen    \
     key <AB09> { [ period,     greater,    dead_belowdot            ] };  // nang     .
     key <AB10> { [ slash,      question,   dead_acute,   dead_hook  ] };  // sac, hoi / ?
     key <AC10> { [ semicolon,  colon,      dead_hook                ] };  // hoi      ?
-    key <AC11> { [ apostrophe, quotedbl,   dead_grave               ] };  // huyen    \
+    key <AC11> { [ apostrophe, quotedbl,   dead_tilde               ] };  // nga      ~
     key <BKSL> { [ backslash,  bar,        dead_grave               ] };  // huyen    \
 
     // alpha
