@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8"/>
+  <title>Viet-Programmers keyboard layout for Linux / X11</title>
+  <style type="text/css">
+    body {
+      color: black;
+      background-color: white;
+    }
+    font.key {
+      background-color: lightgray;
+      color: black;
+    }
+    font.help {
+      color: red;
+    }
+    td {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    td.inner {
+      padding-left: 2px;
+      padding-right: 2px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+  </style>
+</head>
+<body>
+
+
+<h1>Viet-Programmers keyboard layout for Linux / X11</h1>
+<p style="text-align: center; "><img src='thor.jpg'></p>
+<h3 style="text-align: center; ">enough is enough ;)</h3>
+<br/>
+Here you can find Vietnamese keyboard layout based on the idea of Polish-Programmers layout, ie: the Vietnamese special characters are obtained with right side <font class='key'>Alt</font> key (called AltGr) + the corresponding similar character from the basic latin alphabet. If there are more than one Vietnamese letters based on one latin letter, then use the next letter on the right. See <b>Usage</b> section below for details.<br/>
+<br/>
+<font class='help'>You can help by translating this page as my Vietnamese still sucks too much to do this myself ;]</font><br/>
+<br/>
+<hr/>
+<br/>
+
+
+
+<h2>Usage</h2>
+<table border='1'>
+<tr><th>character</th><th colspan='3'>key combinations</th><th>comments</th></tr>
+<tr><td>â</td><td colspan='3'><font class='key'>AltGr</font> + <font class='key'>a</font></td><td rowspan='7'>for capital letter add <font class='key'>Shift</font></td></tr>
+<tr><td>ă</td><td colspan='3'><font class='key'>AltGr</font> + <font class='key'>s</font></td></tr>
+<tr><td>đ</td><td colspan='3'><font class='key'>AltGr</font> + <font class='key'>d</font></td></tr>
+<tr><td>ê</td><td colspan='3'><font class='key'>AltGr</font> + <font class='key'>e</font></td></tr>
+<tr><td>ô</td><td colspan='3'><font class='key'>AltGr</font> + <font class='key'>o</font></td></tr>
+<tr><td>ơ</td><td colspan='3'><font class='key'>AltGr</font> + <font class='key'>p</font></td></tr>
+<tr><td>ư</td><td colspan='3'><font class='key'>AltGr</font> + <font class='key'>u</font></td></tr>
+<tr><td>₫ (VND symbol)</td><td colspan='3'><font class='key'>AltGr</font> + <font class='key'>f</font></td><td></td></tr>
+<tr><td>dấu nặng (ọ)</td><td colspan='3'><font class='key'>AltGr</font> + <font class='key'>.</font></td><td rowspan='5'><!--The layout comes in two variants: <i>-pre</i> and <i>-post</i>.<br/>In <i>-pre</i> you need to put a tone before a character<br/>and in <i>-post</i> after it-->A tone character should be entered <i>after</i> a letter character.<br/>For example to obtain ó first type <font class='key'>o</font> and then <font class='key'>AltGr</font> + <font class='key'>/</font></td>
+</tr>
+<tr><td>dấu sắc (ó)</td><td colspan='3'><font class='key'>AltGr</font> + <font class='key'>/</font></td></tr>
+<tr><td>dấu huyền (ò)</td><td colspan='2'><font class='key'>AltGr</font> + <font class='key'>\</font></td><td>AltGr + <font class='key'>,</font></td></tr>
+<tr><td>dấu hỏi (ỏ)</td><td colspan='2'><table>
+    <tr><td class='inner'> </td><td class='inner'><font class='key'>AltGr</font> + <font class='key'>?</font></td><td class='inner'></td><td class='inner'></td></tr>
+    <tr><td class='inner'>(</td><td class='inner'><font class='key'>AltGr</font> + <font class='key'>Shift</font> +</td><td class='inner' bgcolor='lightgrey'>?<br/>/</td><td class='inner'>)</td></tr>
+  </table></td><td><font class='key'>AltGr</font> + <font class='key'>;</font></td></tr>
+<tr><td>dấu ngã (õ)</td><td><table>
+    <tr><td class='inner'> </td><td class='inner'><font class='key'>AltGr</font> + <font class='key'>~</font></td><td class='inner'></td><td class='inner'></td></tr>
+    <tr><td class='inner'>(</td><td class='inner'><font class='key'>AltGr</font> + <font class='key'>Shift</font> +</td><td class='inner' bgcolor='lightgrey'>~<br/>`</td><td class='inner'>)</td></tr>
+  </table></td><td><font class='key'>AltGr</font> + <font class='key'>`</font></td><td><font class='key'>AltGr</font> + <font class='key'>'</font></td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+
+
+
+<h2>Installation</h2>
+Replace your /usr/share/X11/xkb/symbols/vn file with <a href='vn'>this file</a> file and restart X (logout and login again).<br/>
+<br/>
+<hr/>
+<br/>
+
+
+
+<h2>Changelog</h2>
+<h3>2013.09.10</h3>
+Swapped secondary key combinations for dấu ngã and dấu huyền to be more intuitive: now the latter one can be obtained with either of single quotes: <font class='key'>'</font> and <font class='key'>`</font> .<br/>
+Dropped <i>-pre</i> variant as it generates incorrect characters.
+<br/>
+<h3>2013.07.08</h3>
+<a href='vn-pre.20130708'>vn-pre.20130708</a>, <a href='vn-post.20130708'>vn-post.20130708</a><br/>
+Initial version.<br/>
+<br/>
+<hr/>
+<br/>
+
+
+
+<h2>Legal stuff</h2>
+Layout files and this document are copyrighted by <a href='http://morgwai.pl'>Piotr Morgwai Kotarbiński</a> and
+licensed under <a href='http://www.apache.org/licenses/LICENSE-2.0.txt'>the Apache License, Version 2.0</a>.<br/>
+"Thỏ" movie image was found somewhere on the internet. Its license is unknown. It is hoped that placing it here does not violate anybody's intellectual property.<br/>
+<br/>
+
+
+
+</body>
+</html>
+
